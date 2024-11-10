@@ -1,6 +1,7 @@
-CREATE TABLE T_ACCOUNT (
-                           id IDENTITY NOT NULL PRIMARY KEY,
-                           name VARCHAR(250) NOT NULL,
-                           balance INTEGER NOT NULL,
-                           type VARCHAR(250) NOT NULL
+CREATE TABLE T_ACCOUNT
+(
+    id      IDENTITY     NOT NULL PRIMARY KEY,
+    name    VARCHAR(250) NOT NULL,
+    balance INTEGER      NOT NULL,
+    type    VARCHAR(250) NOT NULL
 );

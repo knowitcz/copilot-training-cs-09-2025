@@ -1,7 +1,16 @@
-CREATE TABLE T_ACCOUNT
-(
-    id      IDENTITY     NOT NULL PRIMARY KEY,
-    name    VARCHAR(250) NOT NULL,
-    balance INTEGER      NOT NULL,
-    type    VARCHAR(250) NOT NULL
+-- Create table T_CLIENT with id, first_ame, last_name and age columns
+CREATE TABLE T_CLIENT (
+    id IDENTITY NOT NULL PRIMARY KEY,
+    first_name VARCHAR(250) NOT NULL,
+    last_name VARCHAR(250) NOT NULL,
+    age INTEGER NOT NULL
+);
+
+CREATE TABLE T_ACCOUNT (
+    id IDENTITY NOT NULL PRIMARY KEY,
+    name VARCHAR(250) NOT NULL,
+    balance INTEGER NOT NULL,
+    type VARCHAR(250) NOT NULL,
+    client_id INT NOT NULL,
+    FOREIGN KEY (client_id) REFERENCES T_CLIENT(id)
 );

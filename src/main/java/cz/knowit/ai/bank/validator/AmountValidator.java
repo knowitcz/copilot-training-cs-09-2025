@@ -19,4 +19,13 @@ public final class AmountValidator {
             throw new ValidationException("Amount must be lower than ATM limit: " + ATM_LIMIT);
         }
     }
+
+    public static void validateEdgeCases(int amount) {
+        if (amount < 0) {
+            throw new ValidationException("Amount must be positive");
+        }
+        if (amount == 0) {
+            throw new ValidationException("Amount must be greater than zero");
+        }
+    }
 }

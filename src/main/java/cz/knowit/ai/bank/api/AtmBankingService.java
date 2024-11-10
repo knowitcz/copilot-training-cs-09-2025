@@ -24,18 +24,21 @@ final class AtmBankingService implements BankingService {
     @Override
     public void makeTransfer(long fromAccountId, long toAccountId, int amount) {
         AmountValidator.validateAtmLimit(amount);
+        AmountValidator.validateEdgeCases(amount);
         accountService.transferMoney(fromAccountId, toAccountId, amount);
     }
 
     @Override
     public void withdraw(long accountId, int amount) {
         AmountValidator.validateAtmLimit(amount);
+        AmountValidator.validateEdgeCases(amount);
         accountService.withdrawMoney(accountId, amount);
     }
 
     @Override
     public void deposit(long accountId, int amount) {
         AmountValidator.validateAtmLimit(amount);
+        AmountValidator.validateEdgeCases(amount);
         accountService.depositMoney(accountId, amount);
     }
 }

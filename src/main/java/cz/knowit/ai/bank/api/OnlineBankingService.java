@@ -5,37 +5,27 @@ import cz.knowit.ai.bank.validator.AmountValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Objects;
+
 /**
- * Branch implementation of the {@link BankingService}.
+ * Online implementation of the {@link TransferBankingService}
  *
  * @author Jiri Koudelka
  * @since 1.0.0
  */
 @Service
-final class BranchBankingService implements BankingService {
+final class OnlineBankingService implements TransferBankingService {
 
     private final AccountService accountService;
 
     @Autowired
-    BranchBankingService(AccountService accountService) {
-        this.accountService = accountService;
+    OnlineBankingService(AccountService accountService) {
+        this.accountService = Objects.requireNonNull(accountService);
     }
 
     @Override
     public void makeTransfer(long fromAccountId, long toAccountId, int amount) {
         AmountValidator.validateEdgeCases(amount);
         accountService.transferMoney(fromAccountId, toAccountId, amount);
-    }
-
-    @Override
-    public void withdraw(long accountId, int amount) {
-        AmountValidator.validateEdgeCases(amount);
-        accountService.withdrawMoney(accountId, amount);
-    }
-
-    @Override
-    public void deposit(long accountId, int amount) {
-        AmountValidator.validateEdgeCases(amount);
-        accountService.depositMoney(accountId, amount);
     }
 }

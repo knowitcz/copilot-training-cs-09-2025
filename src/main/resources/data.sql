@@ -1,1 +1,1 @@
-INSERT INTO T_ACCOUNT (id, name, balance, type) VALUES (1, 'John', 1000, 'CASH');
+INSERT INTO T_ACCOUNT (id, name, balance, type) VALUES (-1, 'John', 1000, 'CASH');

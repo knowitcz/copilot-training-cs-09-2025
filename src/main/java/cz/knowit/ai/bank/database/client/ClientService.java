@@ -17,4 +17,11 @@ public interface ClientService {
      * @return client with the given id
      */
     Optional<Client> getById(long id);
+
+    /**
+     * Saves a client
+     *
+     * @param client client to save
+     */
+    void save(Client client);
 }

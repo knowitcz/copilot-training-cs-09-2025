@@ -2,6 +2,8 @@ package cz.knowit.ai.bank.database.client;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -29,6 +31,13 @@ public final class Client {
 
     @Column(name = "AGE")
     private int age;
+
+    @Column(name = "PHONE_NUMBER")
+    private String phoneNumber;
+
+    @Column(name = "NATIONALITY")
+    @Enumerated(EnumType.STRING)
+    private Nationality nationality;
 
     public Long getId() {
         return id;
@@ -60,5 +69,21 @@ public final class Client {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Nationality getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(Nationality nationality) {
+        this.nationality = nationality;
     }
 }

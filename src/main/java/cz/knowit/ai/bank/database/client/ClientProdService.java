@@ -25,4 +25,9 @@ public final class ClientProdService implements ClientService {
     public Optional<Client> getById(long id) {
         return clientRepository.findById(id);
     }
+
+    @Override
+    public void save(Client client) {
+        clientRepository.save(client);
+    }
 }

@@ -24,14 +24,14 @@ class AccountController {
     }
 
     @GetMapping("/account/{id}")
-    public ResponseEntity<Account> getAccount(@PathVariable long id) {
+    public ResponseEntity<Account> getAccount(@PathVariable(name = "id") long id) {
         return accountService.getAccountById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping("/account/{id}/withdraw/{amount}")
-    public ResponseEntity<Void> withdrawMoney(@PathVariable long id, @PathVariable int amount) {
+    public ResponseEntity<Void> withdrawMoney(@PathVariable(name = "id") long id, @PathVariable(name = "amount") int amount) {
         accountService.withdrawMoney(id, amount);
 
         return ResponseEntity.ok().build();

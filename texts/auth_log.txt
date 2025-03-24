@@ -1,0 +1,150 @@
+[2025-03-24 17:12:24] [ERROR] [Cache] Failed to connect to database.
+[2025-03-24 17:12:44] [DEBUG] [AuthService] Request headers: {...}
+[2025-03-24 17:13:04] [WARN] [UserController] Slow response from external API.
+[2025-03-24 17:13:24] [ERROR] [AuthService] Failed to connect to database.
+[2025-03-24 17:13:44] [DEBUG] [AuthService] Request headers: {...}
+[2025-03-24 17:14:04] [ERROR] [NotificationService] Unhandled exception in controller.
+[2025-03-24 17:14:24] [WARN] [NotificationService] Slow response from external API.
+[2025-03-24 17:14:44] [ERROR] [Cache] Failed to connect to database.
+[2025-03-24 17:15:04] [WARN] [NotificationService] Deprecated endpoint used.
+[2025-03-24 17:15:24] [INFO] [NotificationService] Cache hit for key.
+[2025-03-24 17:15:44] [INFO] [NotificationService] Cache hit for key.
+[2025-03-24 17:16:04] [INFO] [AuthService] Cache hit for key.
+[2025-03-24 17:16:24] [INFO] [Database] Cache hit for key.
+[2025-03-24 17:16:44] [INFO] [NotificationService] Request processed.
+[2025-03-24 17:17:04] [ERROR] [PaymentGateway] Timeout while processing payment.
+[2025-03-24 17:17:24] [INFO] [Cache] User authenticated.
+[2025-03-24 17:17:44] [WARN] [NotificationService] Possible invalid user input.
+[2025-03-24 17:18:04] [DEBUG] [Database] Variable x has value 42.
+[2025-03-24 17:18:24] [INFO] [Cache] Request processed.
+[2025-03-24 17:18:44] [DEBUG] [PaymentGateway] Request headers: {...}
+[2025-03-24 17:19:04] [INFO] [Database] Cache hit for key.
+[2025-03-24 17:19:24] [ERROR] [UserController] Unhandled exception in controller.
+[2025-03-24 17:19:44] [INFO] [Database] Cache hit for key.
+[2025-03-24 17:20:04] [WARN] [UserController] Fallback mechanism triggered.
+[2025-03-24 17:20:24] [DEBUG] [AuthService] Response time: 123ms
+[2025-03-24 17:20:44] [DEBUG] [UserController] Retry count: 2
+[2025-03-24 17:21:04] [INFO] [AuthService] User authenticated.
+[2025-03-24 17:21:24] [ERROR] [UserController] Failed to connect to database.
+[2025-03-24 17:21:44] [DEBUG] [Database] Response time: 123ms
+[2025-03-24 17:22:04] [INFO] [Cache] Cache hit for key.
+[2025-03-24 17:22:24] [WARN] [Cache] Fallback mechanism triggered.
+[2025-03-24 17:22:44] [INFO] [Cache] User authenticated.
+[2025-03-24 17:23:04] [DEBUG] [Database] Request headers: {...}
+[2025-03-24 17:23:24] [ERROR] [AuthService] Unhandled exception in controller.
+[2025-03-24 17:23:44] [INFO] [AuthService] Request processed.
+[2025-03-24 17:24:04] [INFO] [Database] Request processed.
+[2025-03-24 17:24:24] [ERROR] [UserController] Unhandled exception in controller.
+[2025-03-24 17:24:44] [ERROR] [NotificationService] OutOfMemoryError: Java heap space.
+[2025-03-24 17:25:04] [DEBUG] [NotificationService] Response time: 123ms
+[2025-03-24 17:25:24] [DEBUG] [PaymentGateway] Retry count: 2
+[2025-03-24 17:25:44] [ERROR] [Database] OutOfMemoryError: Java heap space.
+[2025-03-24 17:26:04] [ERROR] [AuthService] Repeated authentication failure from IP 192.168.1.24
+[2025-03-24 17:26:24] [ERROR] [AuthService] Repeated authentication failure from IP 192.168.1.55
+[2025-03-24 17:26:44] [ERROR] [NotificationService] Repeated authentication failure from IP 192.168.1.60
+[2025-03-24 17:27:04] [ERROR] [Database] Repeated authentication failure from IP 192.168.1.63
+[2025-03-24 17:27:24] [ERROR] [Cache] Repeated authentication failure from IP 192.168.1.25
+[2025-03-24 17:27:44] [ERROR] [Database] Repeated authentication failure from IP 192.168.1.19
+[2025-03-24 17:28:04] [ERROR] [NotificationService] Repeated authentication failure from IP 192.168.1.53
+[2025-03-24 17:28:24] [ERROR] [UserController] Repeated authentication failure from IP 192.168.1.17
+[2025-03-24 17:28:44] [ERROR] [PaymentGateway] Repeated authentication failure from IP 192.168.1.51
+[2025-03-24 17:29:04] [DEBUG] [Database] Request headers: {...}
+[2025-03-24 17:29:24] [DEBUG] [Database] Request headers: {...}
+[2025-03-24 17:29:44] [ERROR] [Database] NullPointerException at line 23.
+[2025-03-24 17:30:04] [ERROR] [AuthService] Unhandled exception in controller.
+[2025-03-24 17:30:24] [INFO] [UserController] Operation completed successfully.
+[2025-03-24 17:30:44] [WARN] [PaymentGateway] Fallback mechanism triggered.
+[2025-03-24 17:31:04] [WARN] [PaymentGateway] Slow response from external API.
+[2025-03-24 17:31:24] [ERROR] [AuthService] Failed to connect to database.
+[2025-03-24 17:31:44] [DEBUG] [AuthService] Retry count: 2
+[2025-03-24 17:32:04] [DEBUG] [UserController] Response time: 123ms
+[2025-03-24 17:32:24] [WARN] [Cache] Deprecated endpoint used.
+[2025-03-24 17:32:44] [DEBUG] [AuthService] Response time: 123ms
+[2025-03-24 17:33:04] [DEBUG] [AuthService] Response time: 123ms
+[2025-03-24 17:33:24] [INFO] [UserController] Connected to service.
+[2025-03-24 17:33:44] [WARN] [PaymentGateway] Deprecated endpoint used.
+[2025-03-24 17:34:04] [WARN] [UserController] Deprecated endpoint used.
+[2025-03-24 17:34:24] [WARN] [Database] Deprecated endpoint used.
+[2025-03-24 17:34:44] [DEBUG] [UserController] Retry count: 2
+[2025-03-24 17:35:04] [DEBUG] [AuthService] Retry count: 2
+[2025-03-24 17:35:24] [WARN] [NotificationService] Disk usage exceeds 80%.
+[2025-03-24 17:35:44] [DEBUG] [Cache] Request headers: {...}
+[2025-03-24 17:36:04] [DEBUG] [AuthService] Session token: abc123xyz
+[2025-03-24 17:36:24] [ERROR] [AuthService] OutOfMemoryError: Java heap space.
+[2025-03-24 17:36:44] [INFO] [PaymentGateway] Operation completed successfully.
+[2025-03-24 17:37:04] [DEBUG] [UserController] Variable x has value 42.
+[2025-03-24 17:37:24] [DEBUG] [Database] Retry count: 2
+[2025-03-24 17:37:44] [WARN] [PaymentGateway] Deprecated endpoint used.
+[2025-03-24 17:38:04] [ERROR] [Cache] NullPointerException at line 23.
+[2025-03-24 17:38:24] [DEBUG] [UserController] Request headers: {...}
+[2025-03-24 17:38:44] [INFO] [UserController] Cache hit for key.
+[2025-03-24 17:39:04] [DEBUG] [Database] Retry count: 2
+[2025-03-24 17:39:24] [WARN] [Cache] Deprecated endpoint used.
+[2025-03-24 17:39:44] [DEBUG] [Database] Request headers: {...}
+[2025-03-24 17:40:04] [WARN] [AuthService] Fallback mechanism triggered.
+[2025-03-24 17:40:24] [WARN] [Database] Deprecated endpoint used.
+[2025-03-24 17:40:44] [DEBUG] [AuthService] Request headers: {...}
+[2025-03-24 17:41:04] [WARN] [PaymentGateway] Possible invalid user input.
+[2025-03-24 17:41:24] [DEBUG] [UserController] Retry count: 2
+[2025-03-24 17:41:44] [DEBUG] [Cache] Request headers: {...}
+[2025-03-24 17:42:04] [ERROR] [PaymentGateway] OutOfMemoryError: Java heap space.
+[2025-03-24 17:42:24] [ERROR] [Database] Unhandled exception in controller.
+[2025-03-24 17:42:44] [DEBUG] [AuthService] Variable x has value 42.
+[2025-03-24 17:43:04] [WARN] [NotificationService] Disk usage exceeds 80%.
+[2025-03-24 17:43:24] [DEBUG] [Cache] Session token: abc123xyz
+[2025-03-24 17:43:44] [WARN] [AuthService] Deprecated endpoint used.
+[2025-03-24 17:44:04] [DEBUG] [AuthService] Request headers: {...}
+[2025-03-24 17:44:24] [INFO] [NotificationService] Cache hit for key.
+[2025-03-24 17:44:44] [ERROR] [PaymentGateway] Unhandled exception in controller.
+[2025-03-24 17:45:04] [INFO] [AuthService] Request processed.
+[2025-03-24 17:45:24] [ERROR] [UserController] Unhandled exception in controller.
+[2025-03-24 17:45:44] [ERROR] [NotificationService] OutOfMemoryError: Java heap space.
+[2025-03-24 17:46:04] [ERROR] [UserController] Repeated authentication failure from IP 192.168.1.98
+[2025-03-24 17:46:24] [ERROR] [Cache] Repeated authentication failure from IP 192.168.1.12
+[2025-03-24 17:46:44] [ERROR] [UserController] Repeated authentication failure from IP 192.168.1.20
+[2025-03-24 17:47:04] [ERROR] [NotificationService] Repeated authentication failure from IP 192.168.1.43
+[2025-03-24 17:47:24] [ERROR] [PaymentGateway] Unhandled exception in controller.
+[2025-03-24 17:47:44] [DEBUG] [Database] Request headers: {...}
+[2025-03-24 17:48:04] [ERROR] [PaymentGateway] Failed to connect to database.
+[2025-03-24 17:48:24] [ERROR] [Cache] Failed to connect to database.
+[2025-03-24 17:48:44] [DEBUG] [NotificationService] Request headers: {...}
+[2025-03-24 17:49:04] [DEBUG] [Database] Session token: abc123xyz
+[2025-03-24 17:49:24] [ERROR] [Cache] OutOfMemoryError: Java heap space.
+[2025-03-24 17:49:44] [INFO] [Cache] Operation completed successfully.
+[2025-03-24 17:50:04] [DEBUG] [PaymentGateway] Variable x has value 42.
+[2025-03-24 17:50:24] [INFO] [NotificationService] Connected to service.
+[2025-03-24 17:50:44] [DEBUG] [NotificationService] Request headers: {...}
+[2025-03-24 17:51:04] [ERROR] [AuthService] Unhandled exception in controller.
+[2025-03-24 17:51:24] [DEBUG] [NotificationService] Variable x has value 42.
+[2025-03-24 17:51:44] [ERROR] [Cache] Timeout while processing payment.
+[2025-03-24 17:52:04] [INFO] [UserController] Connected to service.
+[2025-03-24 17:52:24] [INFO] [NotificationService] User authenticated.
+[2025-03-24 17:52:44] [WARN] [NotificationService] Deprecated endpoint used.
+[2025-03-24 17:53:04] [DEBUG] [NotificationService] Retry count: 2
+[2025-03-24 17:53:24] [ERROR] [Database] NullPointerException at line 23.
+[2025-03-24 17:53:44] [DEBUG] [PaymentGateway] Retry count: 2
+[2025-03-24 17:54:04] [INFO] [PaymentGateway] Request processed.
+[2025-03-24 17:54:24] [INFO] [AuthService] Operation completed successfully.
+[2025-03-24 17:54:44] [WARN] [Cache] Slow response from external API.
+[2025-03-24 17:55:04] [DEBUG] [Database] Variable x has value 42.
+[2025-03-24 17:55:24] [INFO] [Cache] User authenticated.
+[2025-03-24 17:55:44] [WARN] [AuthService] Deprecated endpoint used.
+[2025-03-24 17:56:04] [ERROR] [PaymentGateway] NullPointerException at line 23.
+[2025-03-24 17:56:24] [ERROR] [AuthService] NullPointerException at line 23.
+[2025-03-24 17:56:44] [WARN] [Cache] Slow response from external API.
+[2025-03-24 17:57:04] [WARN] [NotificationService] Disk usage exceeds 80%.
+[2025-03-24 17:57:24] [INFO] [AuthService] Connected to service.
+[2025-03-24 17:57:44] [WARN] [UserController] Slow response from external API.
+[2025-03-24 17:58:04] [ERROR] [Cache] Timeout while processing payment.
+[2025-03-24 17:58:24] [WARN] [AuthService] Slow response from external API.
+[2025-03-24 17:58:44] [ERROR] [NotificationService] OutOfMemoryError: Java heap space.
+[2025-03-24 17:59:04] [DEBUG] [PaymentGateway] Session token: abc123xyz
+[2025-03-24 17:59:24] [WARN] [PaymentGateway] Possible invalid user input.
+[2025-03-24 17:59:44] [WARN] [UserController] Deprecated endpoint used.
+[2025-03-24 18:00:04] [DEBUG] [AuthService] Request headers: {...}
+[2025-03-24 18:00:24] [DEBUG] [NotificationService] Variable x has value 42.
+[2025-03-24 18:00:44] [WARN] [PaymentGateway] Possible invalid user input.
+[2025-03-24 18:01:04] [ERROR] [Database] OutOfMemoryError: Java heap space.
+[2025-03-24 18:01:24] [WARN] [Database] Fallback mechanism triggered.
+[2025-03-24 18:01:44] [WARN] [Database] Slow response from external API.
+[2025-03-24 18:02:04] [ERROR] [UserController] Unhandled exception in controller.

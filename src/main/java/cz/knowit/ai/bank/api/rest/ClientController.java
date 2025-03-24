@@ -46,7 +46,7 @@ public class ClientController {
     @Operation(summary = "Create client", description = "Creates a new client")
     @PostMapping("/client")
     public ResponseEntity<Void> createClient(@RequestBody Client client) {
-        if (!PhoneNumberValidator.isValid(client.getPhoneNumber(), client.getNationality())) {
+        if (!PhoneNumberValidator.isValid(client.getPhoneNumber(), null)) {
             return ResponseEntity.badRequest().build();
         }
 

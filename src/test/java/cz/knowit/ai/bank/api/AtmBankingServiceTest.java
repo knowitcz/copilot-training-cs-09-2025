@@ -15,7 +15,8 @@ import static org.junit.jupiter.api.Assertions.*;
 final class AtmBankingServiceTest {
 
     private final AccountTestService accountService = new AccountTestService();
-    private final BankingService bankingService = new AtmBankingService(accountService);
+    private final LocalityTestService localityService = new LocalityTestService();
+    private final BankingService bankingService = new AtmBankingService(accountService, localityService);
 
     @Test
     void makeTransfer() {

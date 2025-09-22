@@ -3,6 +3,8 @@ package cz.knowit.ai.bank.database.transaction;
 import cz.knowit.ai.bank.database.product.Account;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -36,6 +38,14 @@ public final class Transaction {
     @JoinColumn(name = "ACCOUNT_ID")
     private Account account;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "TYPE")
+    private TransactionType type;
+
+    @ManyToOne
+    @JoinColumn(name = "LOCALITY_ID")
+    private Locality locality;
+
     public Long getId() {
         return id;
     }
@@ -66,5 +76,21 @@ public final class Transaction {
 
     public void setAccount(Account account) {
         this.account = account;
+    }
+
+    public TransactionType getType() {
+        return type;
+    }
+
+    public void setType(TransactionType type) {
+        this.type = type;
+    }
+
+    public Locality getLocality() {
+        return locality;
+    }
+
+    public void setLocality(Locality locality) {
+        this.locality = locality;
     }
 }

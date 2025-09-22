@@ -14,7 +14,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 final class BranchBankingServiceTest {
 
     private final AccountService accountService = new AccountTestService();
-    private final BankingService bankingService = new BranchBankingService(accountService);
+    private final LocalityTestService localityService = new LocalityTestService();
+    private final BankingService bankingService = new BranchBankingService(accountService, localityService);
 
     @Test
     void makeTransfer() {

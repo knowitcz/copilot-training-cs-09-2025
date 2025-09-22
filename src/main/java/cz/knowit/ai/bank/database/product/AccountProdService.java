@@ -1,7 +1,9 @@
 package cz.knowit.ai.bank.database.product;
 
+import cz.knowit.ai.bank.database.transaction.Locality;
 import cz.knowit.ai.bank.database.transaction.Transaction;
 import cz.knowit.ai.bank.database.transaction.TransactionService;
+import cz.knowit.ai.bank.database.transaction.TransactionType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -47,11 +49,36 @@ public final class AccountProdService implements AccountService {
         accountRepository.depositMoney(accountId, amount);
     }
 
+    @Override
+    public void transferMoney(long fromAccountId, long toAccountId, int amount, TransactionType type, Locality locality) {
+        saveTransaction(fromAccountId, -amount, type, locality);
+        accountRepository.withdrawMoney(fromAccountId, amount);
+        saveTransaction(toAccountId, amount, type, locality);
+        accountRepository.depositMoney(toAccountId, amount);
+    }
+
+    @Override
+    public void withdrawMoney(long accountId, int amount, TransactionType type, Locality locality) {
+        saveTransaction(accountId, -amount, type, locality);
+        accountRepository.withdrawMoney(accountId, amount);
+    }
+
+    @Override
+    public void depositMoney(long accountId, int amount, TransactionType type, Locality locality) {
+        saveTransaction(accountId, amount, type, locality);
+        accountRepository.depositMoney(accountId, amount);
+    }
+
     private void saveTransaction(long accountId, int amount) {
         var transaction = new Transaction();
         transaction.setAccount(accountRepository.findById(accountId).orElseThrow());
         transaction.setAmount(amount);
         transaction.setCreatedAt(Instant.now());
         transactionService.save(transaction);
+    }
+
+    private void saveTransaction(long accountId, int amount, TransactionType type, Locality locality) {
+        Account account = accountRepository.findById(accountId).orElseThrow();
+        transactionService.createTransaction(account, amount, type, locality);
     }
 }

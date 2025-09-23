@@ -15,8 +15,8 @@ be shorter depending on the expertise of the participants.
 
 ## Tech stack
 The training is conducted in the Java programming language using the Spring 
-Boot and Hibernate ORM frameworks. For the purposes of the training, an 
-in-memory H2 database is used, and access to the application is provided 
+Boot and Hibernate ORM frameworks. The application uses an Oracle database 
+for data persistence, and access to the application is provided 
 through a public API (both application and REST). The public API documentation 
 is created using the Swagger library.
 

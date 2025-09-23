@@ -8,4 +8,9 @@ public interface AccountService {
     void transferMoney(long fromAccountId, long toAccountId, int amount);
     void withdrawMoney(long accountId, int amount);
     void depositMoney(long accountId, int amount);
+    
+    // New methods with transaction locality support
+    void transferMoney(long fromAccountId, long toAccountId, int amount, TransactionType transactionType, Long localityId);
+    void withdrawMoney(long accountId, int amount, TransactionType transactionType, Long localityId);
+    void depositMoney(long accountId, int amount, TransactionType transactionType, Long localityId);
 }

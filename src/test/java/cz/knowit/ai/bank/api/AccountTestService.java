@@ -2,6 +2,7 @@ package cz.knowit.ai.bank.api;
 
 import cz.knowit.ai.bank.database.product.Account;
 import cz.knowit.ai.bank.database.product.AccountService;
+import cz.knowit.ai.bank.database.product.TransactionType;
 
 import java.util.HashSet;
 import java.util.Optional;
@@ -56,5 +57,23 @@ final class AccountTestService implements AccountService {
     public void depositMoney(long accountId, int amount) {
         var account = getAccountById(accountId).orElseThrow();
         account.setBalance(account.getBalance() + amount);
+    }
+
+    @Override
+    public void transferMoney(long fromAccountId, long toAccountId, int amount, TransactionType transactionType, Long localityId) {
+        // For test purposes, just delegate to the basic method
+        transferMoney(fromAccountId, toAccountId, amount);
+    }
+
+    @Override
+    public void withdrawMoney(long accountId, int amount, TransactionType transactionType, Long localityId) {
+        // For test purposes, just delegate to the basic method
+        withdrawMoney(accountId, amount);
+    }
+
+    @Override
+    public void depositMoney(long accountId, int amount, TransactionType transactionType, Long localityId) {
+        // For test purposes, just delegate to the basic method
+        depositMoney(accountId, amount);
     }
 }
